@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Onmouseover & Onmouseout Demo</title>
+    <style>
+        div {
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div id="firstDiv" onmouseover="changeBackground('red');" onmouseout="changeBackground('yellow');" onMouseDown="changeBackground('green')" onmouseup="changeBackground('orange')">
+        Move your mouse over this text, then move it out
+    </div>
+    <br>
+    <br>
+    <button type="button" onclick="resetPage()">Click Me to Reset</button>
+
+    <script>
+        function resetPage() {
+            location.reload();
+        }
+
+        function changeBackground(newColor) {
+            document.getElementById('firstDiv').style.background = newColor;
+        }
+    </script>
+</body>
+</html>

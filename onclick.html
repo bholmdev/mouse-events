@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Onclick Demo</title>
+</head>
+<body>
+    <h1 id="header" onclick="changeBackground();">Click Me</h1>
+    <br>
+    <br>
+    <button type="button" onclick="resetPage()">Click me to reset</button>
+
+    <script>
+        function resetPage() {
+            location.reload();
+        }
+
+        function changeBackground() {
+            const h1 = document.getElementById('header');
+            h1.style.background = 'orange';
+        }
+    </script>
+</body>
+</html>
